@@ -14,7 +14,7 @@
         .container {
             border: 2px solid red;
             margin: 3px 0;
-            background: cyan;
+            background: rgb(94, 78, 241);
             padding: 9px;
         }
 
@@ -129,14 +129,14 @@
 
         var arr = [1, 2, 3, 4, 5, 6, 7];
         // console.log(arr);
-        for (var i = 0; i < arr.length; i++){
-            if (i==2){
+        for (var i = 0; i < arr.length; i++) {
+            if (i == 2) {
                 break;
                 continue;
             }
             // console.log(arr[i])
         }
- 
+
         let myArr = ["Fan", "Camera", 34, null, true];
         // console.log(myArr.length)
         // myArr.pop()
@@ -161,11 +161,58 @@
         // console.log(d, myString)
 
         let myDate = new Date()
-        console.log(myDate.getTime())
-        console.log(myDate.getFullYear())
-        console.log(myDate.getDay())
-        console.log(myDate.getHours())
-        console.log(myDate.getUTCDate())
+        // console.log(myDate.getTime())
+        // console.log(myDate.getFullYear())
+        // console.log(myDate.getDay())
+        // console.log(myDate.getHours())
+        // console.log(myDate.getUTCDate())
+
+        let elem = document.getElementById('click');
+        console.log(elem);
+
+        let elemClass = document.getElementsByClassName('container')
+        console.log(elemClass)
+
+        elemClass[0].style.background = "yellow"
+        elemClass[1].style.background = "grey"
+
+        elemClass[0].classList.add("bg-primary")
+        // elemclass[0].classList.add("text-success")
+
+        tn = document.getElementsByTagName('div')
+        console.log(tn)
+        createdElement = document.createElement('p');
+        createdElement.innerText = "This paragraph is created by JS";
+        tn[0].appendChild(createdElement);
+        createdElement = document.createElement('b');
+        createdElement.innerText = "This bold is created by JS";
+        // tn[0].replaceChild(createdElement2, createdElement);
+
+        // function clicked() {
+        //     console.log("The button was clicked")
+        // }
+        // window.onload = function () {
+        //     console.log("The document was loaded")
+        // }
+
+        firstContainer.addEventListener('click', function () {
+            document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
+            console.log('Clicked on Container')
+            // })
+            // firstContainer.addEventListener('mouseover', function () {
+            //     console.log('Mouse on Container')
+            // })
+            // firstContainer.addEventListener('mouseout', function () {
+            //     console.log('Mouse out of Container')
+        })
+
+        // Arrow functions
+        function summ(a, b){
+            return a + b;
+        }
+        summ = (a,b) =>{
+            return a + b;
+        }
 
     </script>
 </body>
