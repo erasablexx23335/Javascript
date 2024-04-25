@@ -168,10 +168,10 @@
         // console.log(myDate.getUTCDate())
 
         let elem = document.getElementById('click');
-        console.log(elem);
+        // console.log(elem);
 
         let elemClass = document.getElementsByClassName('container')
-        console.log(elemClass)
+        // console.log(elemClass)
 
         elemClass[0].style.background = "yellow"
         elemClass[1].style.background = "grey"
@@ -179,13 +179,13 @@
         elemClass[0].classList.add("bg-primary")
         // elemclass[0].classList.add("text-success")
 
-        tn = document.getElementsByTagName('div')
-        console.log(tn)
-        createdElement = document.createElement('p');
-        createdElement.innerText = "This paragraph is created by JS";
-        tn[0].appendChild(createdElement);
-        createdElement = document.createElement('b');
-        createdElement.innerText = "This bold is created by JS";
+        // tn = document.getElementsByTagName('div')
+        // console.log(tn)
+        // createdElement = document.createElement('p');
+        // createdElement.innerText = "This paragraph is created by JS";
+        // tn[0].appendChild(createdElement);
+        // createdElement = document.createElement('b');
+        // createdElement.innerText = "This bold is created by JS";
         // tn[0].replaceChild(createdElement2, createdElement);
 
         // function clicked() {
@@ -195,16 +195,16 @@
         //     console.log("The document was loaded")
         // }
 
-        firstContainer.addEventListener('click', function () {
-            document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
-            console.log('Clicked on Container')
+        // firstContainer.addEventListener('click', function () {
+            // document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
+            // console.log('Clicked on Container')
             // })
             // firstContainer.addEventListener('mouseover', function () {
             //     console.log('Mouse on Container')
             // })
             // firstContainer.addEventListener('mouseout', function () {
             //     console.log('Mouse out of Container')
-        })
+            
 
         // Arrow functions
         function summ(a, b){
@@ -213,6 +213,15 @@
         summ = (a,b) =>{
             return a + b;
         }
+
+        LOGIN = ()=>{
+            document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>"
+            console.log("Logged IN");
+        }
+
+        setTimeout(LOGIN, 2000);
+
+    
 
     </script>
 </body>
