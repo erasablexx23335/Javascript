@@ -69,63 +69,63 @@
             shubham: 99.997
         }
 
-        // console.log(num1 + num2);
-        // console.log(str1 + str2);
+        console.log(num1 + num2);
+        console.log(str1 + str2);
 
         varA = true;
         varB = false;
-        // console.log(varA , varB);
+        console.log(varA, varB);
 
         var arr = [1, "string", 3, 4];
-        // console.log(arr)
+        console.log(arr)
 
         var a = 100;
         var b = 55;
 
-        // console.log("The value of a+b is ", a+b);
-        // console.log("The value of a-b is ", a-b);
-        // console.log("The value of a*b is ",a*b);
-        // console.log("The value of a/b is ", a/b);
+        console.log("The value of a+b is ", a + b);
+        console.log("The value of a-b is ", a - b);
+        console.log("The value of a*b is ", a * b);
+        console.log("The value of a/b is ", a / b);
 
         var c = b;
         c += 2
-        // console.log(c);
+        console.log(c);
 
         var x = 34;
         var y = 56;
-        // console.log(x == y);
-        // console.log(x >= y);
-        // console.log(x <= y);
-        // console.log(x > y);
-        // console.log( x < y); 
+        console.log(x == y);
+        console.log(x >= y);
+        console.log(x <= y);
+        console.log(x > y);
+        console.log(x < y);
 
-        // console.log(false && false);
-        // console.log(true && false);
-        // console.log(true && true);
+        console.log(false && false);
+        console.log(true && false);
+        console.log(true && true);
 
 
-        // console.log(false || false);
-        // console.log(true || false);
-        // console.log(true || true);
+        console.log(false || false);
+        console.log(true || false);
+        console.log(true || true);
 
         function avg(a, b) {
             return (a + b) / 2;
         }
         c1 = avg(4, 6);
         c2 = avg(14, 16);
-        // console.log(c1, c2)
+        console.log(c1, c2)
 
-        /*
-         var age = 21;
- 
-         if(age > 18){
-             console.log("You can drive")
-         }
-         else{
-             console.log("You cannot drive")
-         }
-         console.log(++ age)
-         */
+
+        var age = 21;
+
+        if (age > 18) {
+            console.log("You can drive")
+        }
+        else {
+            console.log("You cannot drive")
+        }
+        console.log(++age)
+
 
         var arr = [1, 2, 3, 4, 5, 6, 7];
         // console.log(arr);
@@ -134,44 +134,44 @@
                 break;
                 continue;
             }
-            // console.log(arr[i])
+            console.log(arr[i])
         }
 
         let myArr = ["Fan", "Camera", 34, null, true];
-        // console.log(myArr.length)
-        // myArr.pop()
-        // myArr.push("Rishabh")
-        // myArr.shift()
-        // myArr.unshift("Js tut")
-        // myArr.toString()
-        // console.log(myArr)
-        // myArr.sort()
-        // console.log(myArr)
+        console.log(myArr.length)
+        myArr.pop()
+        myArr.push("Rishabh")
+        myArr.shift()
+        myArr.unshift("Js tut")
+        myArr.toString()
+        console.log(myArr)
+        myArr.sort()
+        console.log(myArr)
 
         // string methods in js
         let myString = " Rishabh is a good boy "
-        // console.log(myString.length)
-        // console.log(myString.indexOf("d"))
-        // console.log(myString.lastIndexOf("boy"))
+        console.log(myString.length)
+        console.log(myString.indexOf("d"))
+        console.log(myString.lastIndexOf("boy"))
 
-        // console.log(myString.slice(0, 5))
+        console.log(myString.slice(0, 5))
 
-        // d = myString.replace("Rishabh", "Gaurav");
-        // d = d.replace("good", "Ambitious")
-        // console.log(d, myString)
+        d = myString.replace("Rishabh", "Gaurav");
+        d = d.replace("good", "Ambitious")
+        console.log(d, myString)
 
         let myDate = new Date()
-        // console.log(myDate.getTime())
-        // console.log(myDate.getFullYear())
-        // console.log(myDate.getDay())
-        // console.log(myDate.getHours())
-        // console.log(myDate.getUTCDate())
+        console.log(myDate.getTime())
+        console.log(myDate.getFullYear())
+        console.log(myDate.getDay())
+        console.log(myDate.getHours())
+        console.log(myDate.getUTCDate())
 
         let elem = document.getElementById('click');
-        // console.log(elem);
+        console.log(elem);
 
         let elemClass = document.getElementsByClassName('container')
-        // console.log(elemClass)
+        console.log(elemClass)
 
         elemClass[0].style.background = "yellow"
         elemClass[1].style.background = "grey"
@@ -179,66 +179,67 @@
         elemClass[0].classList.add("bg-primary")
         // elemclass[0].classList.add("text-success")
 
-        // tn = document.getElementsByTagName('div')
-        // console.log(tn)
-        // createdElement = document.createElement('p');
-        // createdElement.innerText = "This paragraph is created by JS";
-        // tn[0].appendChild(createdElement);
+        tn = document.getElementsByTagName('div')
+        console.log(tn)
+        createdElement = document.createElement('p');
+        createdElement.innerText = "This paragraph is created by JS";
+        tn[0].appendChild(createdElement);
         // createdElement = document.createElement('b');
         // createdElement.innerText = "This bold is created by JS";
         // tn[0].replaceChild(createdElement2, createdElement);
 
-        // function clicked() {
-        //     console.log("The button was clicked")
-        // }
-        // window.onload = function () {
-        //     console.log("The document was loaded")
-        // }
+    //     function clicked() {
+    //         console.log("The button was clicked")
+    //  }
+    //     window.onload = function () {
+    //         console.log("The document was loaded")
+    //     }
 
-        // firstContainer.addEventListener('click', function () {
-        // document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
-        // console.log('Clicked on Container')
-        // })
-        // firstContainer.addEventListener('mouseover', function () {
-        //     console.log('Mouse on Container')
-        // })
-        // firstContainer.addEventListener('mouseout', function () {
-        //     console.log('Mouse out of Container')
+    //     firstContainer.addEventListener('click', function () {
+    //         document.querySelectorAll('.container')[1].innerHTML = "<b> we have clicked </b>"
+    //         console.log('Clicked on Container')
+    //     })
+    //     firstContainer.addEventListener('mouseover', function () {
+    //         console.log('Mouse on Container')
+    //     })
+    //     firstContainer.addEventListener('mouseout', function () {
+    //         console.log('Mouse out of Container')
 
 
-        // Arrow functions
-        /*
-        function summ(a, b) {
-            return a + b;
-        }
-        summ = (a, b) => {
-            return a + b;
-        }
+            // Arrow functions
 
-        LOGIN = () => {
-            document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired</b>"
-            console.log("Logged IN");
-        }
+            function summ(a, b) {
+                return a + b;
+            }
+            summ = (a, b) => {
+                return a + b;
+            }
 
-        setTimeout(LOGIN, 2000);
-        // clr = setInterval(LOGIN, 2000);
+            LOGIN = () => {
+                document.querySelectorAll('.container')[0].innerHTML = "<b> Set interval fired</b>"
+                console.log("Logged IN");
+            }
 
-        localStorage.setItem('name', 'Rishabh');
-        localStorage
-        localStorage.getItem('name');
-        localStorage.removeItem('name');
-        localStorage.clear();
+            setTimeout(LOGIN, 2000);
+            // clr = setInterval(LOGIN, 2000);
 
-        // JSON
-        obj = { name: 'Rishabh', length: 1 }
-        jso = JSON.stringify(obj);
-        console.log(typeof (jsof))
-        console.log(jso)
-        parsed = JSON.parse(`{"name":"Rishabh","length":1, "a" :{"this":"that"}}`)
-        console.log(parsed)
-        */
+            localStorage.setItem('name', 'Rishabh');
+            localStorage
+            localStorage.getItem('name');
+            localStorage.removeItem('name');
+            localStorage.clear();
+
+            JSON
+            obj = { name: 'Rishabh', length: 1 }
+            jso = JSON.stringify(obj);
+            console.log(typeof (jsof))
+            console.log(jso)
+            parsed = JSON.parse(`{"name":"Rishabh","length":1, "a" :{"this":"that"}}`)
+            console.log(parsed)
+
 
 
     </script>
 </body>
+
 </html>
