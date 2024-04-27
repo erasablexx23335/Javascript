@@ -51,12 +51,17 @@ let prom1 = new Promise((resolve, reject) => {
 //     console.log(err)
 //   })
 
-let p4 = Promise.allSettled([prom1, prom2, prom3])
+// let p4 = Promise.reject("ARE YOU CONSOLE")([prom1, prom2, prom3])
+let p4 = Promise.all([prom1, prom2, prom3])
+// let p4 = Promise.allSettled([prom1, prom2, prom3])
+// let p4 = Promise.race([prom1, prom2, prom3])
+// let p4 = Promise.any([prom1, prom2, prom3])
+// let p4 = Promise.resolve([prom1, prom2, prom3])
 p4.then ((a) => {
   console.log(a)
 }).catch ((err) => {
-        console.log(err)
-      })
+  console.log(err)
+})
 
   
   
